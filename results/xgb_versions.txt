@@ -1,0 +1,3 @@
+v1: all product features, balanced weight
+v2: all product features + dow + hod, balanced weight
+v3: all product features, balanced weight * 0.8
