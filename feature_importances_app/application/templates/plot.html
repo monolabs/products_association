@@ -1,0 +1,24 @@
+<!doctype html>
+<title>Plot Feature Importances</title>
+
+<form method="POST", action="/">
+<div>
+    Product of Interest: {{form.product_of_interest}} <br>
+    Number of Features: <input type="number" name="num_features", min="10" max="75" step="1" value="{{def_num_features}}" required> (must be between 10 and 75) <br>
+    <button>Plot</button type="submit">
+</div>
+</form>
+
+<br>
+
+<div>
+{% if pass_image %}
+<img src="/static/img.png" />
+{% endif %}
+</div>
+
+<div>
+    {% if err_msg %}
+    {{err_msg}}
+    {% endif %}
+</div>
